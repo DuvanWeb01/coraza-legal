@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coraza — Términos y privacidad</title>
+<style>
+  :root {
+    --accent: #014E9C;
+    --accent-strong: #013A73;
+    --text: #12141C;
+    --text-muted: #6B7280;
+    --border: #E8EBF0;
+    --bg: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--accent);
+    color: #fff;
+    padding: 32px 20px 40px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 22px; }
+  header p { margin: 0; opacity: .85; font-size: 14px; }
+  main {
+    max-width: 640px;
+    margin: -20px auto 0;
+    background: var(--bg);
+    border-radius: 20px 20px 0 0;
+    padding: 28px 20px 60px;
+  }
+  .intro {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 28px;
+  }
+  section { margin-bottom: 24px; }
+  section h2 { font-size: 16px; margin: 0 0 6px; }
+  section p { color: var(--text-muted); font-size: 14px; margin: 0; }
+  section ul { color: var(--text-muted); font-size: 14px; margin: 6px 0 0; padding-left: 20px; }
+  section li { margin-bottom: 4px; }
+  .contact {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 32px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .contact a { color: var(--accent); }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Términos y privacidad</h1>
+    <p>Coraza — actualizado el 4 de agosto de 2026</p>
+  </header>
+  <main>
+    <p class="intro">
+      Este es un resumen simple y directo de qué datos guarda Coraza, cómo se usan y con qué
+      servicios de terceros se comparten — no reemplaza un documento legal formal.
+    </p>
+
+    <section>
+      <h2>Qué datos guardamos</h2>
+      <p>
+        Tu email y contraseña (gestionados por Supabase Auth, nunca vemos tu contraseña en texto
+        plano), tu perfil (nombre de usuario, nombre, bio, foto), tus datos corporales si los
+        cargas (edad, altura, peso, objetivo), y tu actividad en la app: rutinas, entrenamientos,
+        series, fotos de comidas y de entrenamientos, comentarios y a quién sigues.
+      </p>
+    </section>
+
+    <section>
+      <h2>Dónde se guarda</h2>
+      <p>
+        Todo se guarda en Supabase (base de datos y almacenamiento de archivos), con acceso
+        restringido por usuario mediante políticas de seguridad a nivel de fila.
+      </p>
+    </section>
+
+    <section>
+      <h2>Con quién se comparte</h2>
+      <p>
+        Con nadie fuera de la app, salvo los servicios de terceros que la hacen funcionar:
+      </p>
+      <ul>
+        <li><strong>Supabase</strong> — base de datos, autenticación y almacenamiento de archivos.</li>
+        <li><strong>Google (Gemini API)</strong> — procesa tus preguntas al Coach IA, la generación de planes de entrenamiento y el análisis de fotos/audio de comidas que decides enviarle.</li>
+        <li><strong>Google y Facebook</strong> — solo si eliges iniciar sesión con esas cuentas, para verificar tu identidad.</li>
+        <li><strong>SendGrid</strong> — envío de los correos de verificación y recuperación de contraseña.</li>
+      </ul>
+      <p style="margin-top: 8px;">
+        Lo único visible para otros usuarios de la app es lo que tú decides hacer público: tu
+        perfil y los entrenamientos que terminas (visibles para quienes te siguen).
+      </p>
+    </section>
+
+    <section>
+      <h2>Eliminar tu cuenta o tus datos</h2>
+      <p>
+        Puedes eliminar tu cuenta y todos tus datos en cualquier momento desde
+        Ajustes → Contraseña y seguridad → Eliminar mi cuenta, directamente en la app. Esta
+        acción no se puede deshacer. Si no puedes acceder a la app, puedes solicitar la
+        eliminación escribiendo al correo de contacto de abajo.
+      </p>
+    </section>
+
+    <div class="contact">
+      ¿Preguntas sobre tus datos o esta política? Escríbenos a
+      <a href="mailto:duvanweb@gmail.com">duvanweb@gmail.com</a>.
+    </div>
+  </main>
+  <footer>Coraza</footer>
+</body>
+</html>
