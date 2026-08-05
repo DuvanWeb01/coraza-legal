@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coraza — Soporte</title>
+<style>
+  :root {
+    --accent: #014E9C;
+    --accent-strong: #013A73;
+    --text: #12141C;
+    --text-muted: #6B7280;
+    --border: #E8EBF0;
+    --bg: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--accent);
+    color: #fff;
+    padding: 32px 20px 40px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 22px; }
+  header p { margin: 0; opacity: .85; font-size: 14px; }
+  main {
+    max-width: 640px;
+    margin: -20px auto 0;
+    background: var(--bg);
+    border-radius: 20px 20px 0 0;
+    padding: 28px 20px 60px;
+  }
+  .intro {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .contact-card {
+    background: #F5F8FC;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 32px;
+  }
+  .contact-card p { margin: 0 0 4px; font-size: 13px; color: var(--text-muted); }
+  .contact-card a {
+    color: var(--accent);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  h2.section-title { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); margin: 0 0 14px; }
+  section.faq { margin-bottom: 24px; }
+  details {
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+  }
+  details summary {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before {
+    content: "+";
+    display: inline-block;
+    width: 18px;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  details[open] summary::before { content: "–"; }
+  details p {
+    margin: 10px 0 0 18px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  .links {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .links a { color: var(--accent); }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Soporte</h1>
+    <p>Coraza — ¿en qué te podemos ayudar?</p>
+  </header>
+  <main>
+    <p class="intro">
+      Respuestas rápidas a las dudas más comunes sobre la app. Si no encuentras lo que buscas,
+      escríbenos directamente.
+    </p>
+
+    <div class="contact-card">
+      <p>Contacto directo</p>
+      <a href="mailto:duvanweb@gmail.com">duvanweb@gmail.com</a>
+    </div>
+
+    <section class="faq">
+      <h2 class="section-title">Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Cómo agrego un ejercicio a una rutina o entrenamiento?</summary>
+        <p>Toca "Agregar ejercicio", búscalo o filtra por grupo muscular, y selecciónalo. Puedes marcar tus favoritos con la estrella para encontrarlos más rápido la próxima vez.</p>
+      </details>
+
+      <details>
+        <summary>¿Cómo veo cómo se hace un ejercicio?</summary>
+        <p>Toca la imagen del ejercicio (tiene un ícono de play en la esquina) para abrir la ficha con el video, el músculo trabajado, el equipo necesario y los pasos.</p>
+      </details>
+
+      <details>
+        <summary>¿Cómo empiezo un entrenamiento?</summary>
+        <p>Desde la pantalla principal o desde una rutina guardada, toca "Empezar entrenamiento". Vas a poder agregar series, marcarlas como completadas y agregar o reemplazar ejercicios sobre la marcha.</p>
+      </details>
+
+      <details>
+        <summary>¿Quién puede ver mis entrenamientos?</summary>
+        <p>Tus entrenamientos terminados aparecen en el feed de las personas que te siguen. Tú controlas a quién sigues y quién te sigue desde tu perfil.</p>
+      </details>
+
+      <details>
+        <summary>¿Cómo cambio mi contraseña?</summary>
+        <p>Ajustes → Contraseña y seguridad.</p>
+      </details>
+
+      <details>
+        <summary>¿Cómo cancelo o gestiono mi suscripción a Coraza Pro?</summary>
+        <p>Desde Ajustes → Suscripción → "Gestionar suscripción", que te lleva directo a la configuración de suscripciones de tu cuenta de Apple o Google.</p>
+      </details>
+
+      <details>
+        <summary>¿Cómo elimino mi cuenta?</summary>
+        <p>Ajustes → Contraseña y seguridad → Eliminar mi cuenta. Borra tu cuenta y todos tus datos de forma permanente.</p>
+      </details>
+    </section>
+
+    <div class="links">
+      ¿Buscas la política de privacidad? Está acá:
+      <a href="./index.html">Términos y privacidad</a>.
+    </div>
+  </main>
+  <footer>Coraza</footer>
+</body>
+</html>
